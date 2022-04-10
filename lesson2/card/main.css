@@ -1,0 +1,61 @@
+
+body {
+    margin: 0;
+}
+
+.wrap {
+    height: 450px;
+    background: aliceblue;
+
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.card {
+    margin-top: 20px;
+    width: 300px;
+    height: 400px;
+    background: white;
+
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    height: 100px;
+    width: 100%;
+
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.text {
+    height: 200px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 30px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.link {
+    height: 60px;
+    width: 80%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
