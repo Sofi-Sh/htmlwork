@@ -1,0 +1,35 @@
+.container{
+    width: 1200px;
+    min-height: 800px;
+    background: silver;
+    margin: 0 auto;
+}
+.a{
+    width: 100%;
+    height: 200px;
+    background: gray;
+}
+.inner-container{
+    width: 100%;
+    min-height: 600px;
+    background: coral;
+    display: flex;
+}
+.bcdefg-container{
+    width: 75%;
+    height: 600px;
+    background: cornflowerblue;
+    display: flex;
+flex-wrap: wrap;
+}
+.h{
+    width: 25%;
+    height: 600px;
+    background: green;
+}
+.box{
+    width: 33.3%;
+    height: 300px;
+    background: rgb(2,0,36);
+background: radial-gradient(#00eaff, rgba(0, 128, 30, 0.54), blue);
+}
