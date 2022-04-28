@@ -96,38 +96,36 @@
 // }
 // console.log(randoms(100));
 
-// ?- Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+// - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 //
-// ?
-//     ?
-//         ?
 // let nums = [1,2,3,4,677,876]
 // function mas(arr) {
-//
+// let num2=[];
 //     for (let i = arr.length - 1; i >= 0; i--) {
-//
+//         const arrElement = arr[i];
+//         num2.push(arrElement)
 //     }
+//     return num2;
 // }
 // console.log(mas(nums));
-//
+// //
 
-// - ?створити функцію, яка якщо приймає один аргумент, просто вивдоить його, якщо два аргументи - складає або конкатенує їх між собою.
-//?
-// ?
-// function arg(a,b) {
-//     for (const aElement of arr) {
+// - створити функцію, яка якщо приймає один аргумент, просто вивдоить його, якщо два аргументи - складає або конкатенує їх між собою.
+// function arg(a,b)
+// {
+//         if (a&b){
+//         return a+b;
+//     }
 //         if (a){
 //             return a;
 //         }
-//         if (a&b){
-//             return a+b;
-//
-//         }
-//     }
 // }
+//
+// console.log(arg(5));
+// console.log(arg(10,12));
 
 
-// - ?створити функцію  яка приймає два масиви та скаладає значення елементів з однаковими індексами
+// - створити функцію  яка приймає два масиви та скаладає значення елементів з однаковими індексами
 // та повертає новий результуючий масив.
 //     EXAMPLE:
 // [1,2,3,4]
@@ -135,36 +133,51 @@
 // результат
 //     [3,5,7,9]
 //
+//   let nums1= [1,2,3,4];
+//     let nums2=[2,3,4,5];
+// function mas(arr1,arr2) {
+//     let nums3= [];
+//     for (let i = 0; i < arr1.length; i++) {
+//     }
+//     for (let i = 0; i < arr2.length; i++) {
+//     }
+//     return nums3= [arr1[0]+arr2[0],arr1[1]+arr2[1],arr1[2]+arr2[2],arr1[3]+arr2[3]];
+// }
+// console.log(mas(nums1,nums2));
 
-// let nums1= [1,2,3,4];
-// let nums2=[2,3,4,5];
-// function res(arr1,arr2) {
-
-
-// -? Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
+// Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
 // EXAMPLE:
 //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
+//
 // let arr = [{name: 'Dima'}, {age: 13}, {model: 'Camry'}];
-// function f(array) {
-//     let res=[];
+// function func(array) {
+//     let arrN=[];
 //     for (const item of array) {
-//
+//         console.log(item);
+//         for (const itemKey in item) {
+//             console.log(itemKey);
+//            arrN.push(itemKey);
+//         }
 //     }
-//
-//
-// console.log(f(arr));
+//     return arrN;
+// }
+// console.log(func(arr));
 
-//
-//     ?- Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
+
+//    Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
 // EXAMPLE:
 //     [{name: 'Dima'}, {age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
+//
 // let arr = [{name: 'Dima'}, {age: 13}, {model: 'Camry'}];
-// function f(array) {
-//     let res=[];
+//
+// function ret(array) {
+//     let res = [];
 //     for (const item of array) {
-//       res.push([`${item.name},${item.age},${item.model}`]) ;
+//         console.log(item);
+//         for (const itemKey in item) {
+//           res.push(item[itemKey])  ;
+//         }
 //     }
 //     return res;
 // }
-//
-// console.log(f(arr));
+// console.log(ret(arr));
